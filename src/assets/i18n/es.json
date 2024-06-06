@@ -1,0 +1,9 @@
+{
+  "APP": {
+    "DEMO_COMPONENT": "Componente de demostración",
+    "TRIGGER_SUCCESS": "Desencadenar Éxito",
+    "TRIGGER_WARN": "Desencadenar Advertencia",
+    "TRIGGER_ERROR": "Desencadenar Error",
+    "TRIGGER_INFO": "Desencadenar Información"
+  }
+}

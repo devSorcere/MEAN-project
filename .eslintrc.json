@@ -1,0 +1,76 @@
+{
+  "root": true,
+  "plugins": ["prettier", "@typescript-eslint"],
+  "ignorePatterns": ["!/src"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "overrides": [
+    {
+      "env": {
+        "browser": true,
+        "jasmine": true,
+        "jest": true
+      },
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "google",
+        "prettier" // make sure this is last to prevent issues with eslint vs prettier
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@typescript-eslint/naming-convention": ["error", { "selector": "enumMember", "format": ["PascalCase", "camelCase"] }],
+        // force usage of @typescript-eslint/no-shadow instead
+        "no-shadow": "off",
+        "@angular-eslint/component-class-suffix": "off",
+        "@typescript-eslint/no-shadow": "error",
+        // force usage of @typescript-eslint/no-unused-vars instead
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["error", { "args": "none" }], // allow unused args in callbacks
+        "@typescript-eslint/member-ordering": "off",
+        "linebreak-style": "off",
+        "new-cap": "off",
+        "no-console": "warn",
+        "no-debugger": "error",
+        "no-invalid-this": "off",
+        "require-jsdoc": "off",
+        "valid-jsdoc": [
+          "off",
+          {
+            "requireParamDescription": false,
+            "requireReturnDescription": false,
+            "requireReturn": false,
+            "prefer": { "returns": "return" }
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    }
+  ]
+}

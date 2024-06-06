@@ -1,0 +1,9 @@
+{
+  "APP": {
+    "DEMO_COMPONENT": "Demo Component",
+    "TRIGGER_SUCCESS": "Trigger Success",
+    "TRIGGER_WARN": "Trigger Warn",
+    "TRIGGER_ERROR": "Trigger Error",
+    "TRIGGER_INFO": "Trigger Info"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "APP": {
+    "DEMO_COMPONENT": "Composant de démonstration",
+    "TRIGGER_SUCCESS": "Déclencher Succès",
+    "TRIGGER_WARN": "Déclencher Avertissement",
+    "TRIGGER_ERROR": "Déclencher Erreur",
+    "TRIGGER_INFO": "Déclencher Information"
+  }
+}

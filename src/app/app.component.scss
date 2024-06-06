@@ -1,0 +1,19 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+
+  .page-title {
+    color: var(--primary-color);
+  }
+
+  .page-content {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

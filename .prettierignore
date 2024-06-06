@@ -1,0 +1,14 @@
+ios
+android
+bin
+node_modules
+dist
+tmp
+out-tsc
+.angular
+*.yml
+.vscode
+.husky
+coverage
+docs
+www
